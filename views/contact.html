@@ -1,4 +1,4 @@
-<!-- views/index.html -->
+<!-- views/contact.html -->
 <!DOCTYPE html>
 <html>
 
@@ -8,8 +8,16 @@
 </head>
 
 <body>
-    <h1>Welcome to Contact page</h1>
-    <p>This is the Contact page content.</p>
+    <h1>Contact Us</h1>
+    <form action="/contact" method="POST">
+        <label>Name:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Message:</label><br>
+        <textarea name="message" required></textarea><br><br>
+
+        <button type="submit">Send</button>
+    </form>
 </body>
 
 </html>
